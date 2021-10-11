@@ -14,6 +14,12 @@ Background color Peach ( #EDD1B0) has been chosen based on study: "Good Backgrou
 ### Font selection
 Roboto Medium font has been chosen for headers with recommended Lato Regular for easier reading. 
 
+### Quiz flow 
+The site consists of an intro greeting and an initiate quiz button. Once the quiz is initiated, the stack of questions is drawn from an array of unused questions. Each question offers 4 answers to choose from as well as an image related to the topic. Questions are inspected if they have already been provided to the user. If the question has already been previously read by the user during the ongoing quiz sessions, it is replaced with the unread question.  
+
+Once the user answers and submits the question, the javascript identifies if the answer is correct or wrong and adds the number to the count to either to wrong or correct answer. The process continues till the user uses answers ten questions. In the end, the user is congratulated on participation with the image of Napoleon and displayed score. 
+
+<img src="assets/images/flow_chart.JPG" alt="color_scheme">
 
 ## Testing
 
