@@ -27,24 +27,45 @@
             <img> Some image
             <button class="btn" onclick="hideIntro()">Start Quiz</button>  
         </div>
-        <div id="quizArea">
-            <p id="question"></p>
+        <div id="quizArea" class="hidden">
+            <div id="quizImage">
+
+            </div>
+            
+           <p id="question"></p>
+             <!-- offered awensers -->
             <div class="awnsers">
                 <div>
-                    <button id="a1">x</button>  
+                    <button class='awnser' id="a1">x</button>  
                 </div>
                 <div>
-                    <button id="a2">x</button>  
+                    <button class='awnser' id="a2">x</button>  
                 </div>
                 <div>
-                    <button id="a3">x</button>    
+                    <button class='awnser' id="a3">x</button>    
                 </div>
                 <div>
-                    <button id="a4">x </button>   
+                    <button class='awnser' id="a4">x </button>   
                 </div>
             </div>
         </div>   
            
+       </section>
+       <section>
+            <!-- scoreboard area -->
+            <div id="scoreArea" class="hidden">
+                <h2 id="congratulatons">Congradolations!</h2>
+                <img class= "quiz-image"src="assets/images/napoleon.jpg" alt="napoleon">
+                <h3 id="score-anouncment">Your score is!</h3>
+                <h3 id="score"></h3>
+            </div>
+       </section>
+
+       <section>
+           <!-- cheat sheet-->
+           <div class="hidden">
+            <p id="correctAwnser"></p>
+           </div>
        </section>
     
 

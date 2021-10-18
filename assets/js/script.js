@@ -1,5 +1,69 @@
 /* Ferch questions from json file */
-const questions = fetch("assets/data/questions.json").then(res => res.json())
+//const questions = fetch("assets/data/questions.json").then(res => res.json()) - reserved till I learn how to better manipulate json
+/*questions and images */
+const questions = [
+    {
+        question: "In 18th century infantry plate armour became obsolete because:",
+        image: '<img  class= "quiz-image" src="assets/images/armour.jpg" alt="armour">',
+        correct: "High cost and low effectiveness against fire arms",
+        awnsers: ["High cost and low effectiveness against fire arms", "Emergence of kevlars", "Slow logistical army speed", "Increased naval combat"]
+    },
+    {
+        question: " In about 1439, Johannes Gutenberg adapted what mechanism to create the first printing press:",
+        image: '<img  class= "quiz-image" src="assets/images/printing_press.png" alt="printing_press">',
+        correct: "Wine press",
+        awnsers: ["Wine press", "Stone crusher","Windmill","Lift mechanism"]
+    },
+    {
+        question: "Venice, the floating city is built on foundations made out of:",
+        image: '<img  class= "quiz-image" src="assets/images/venice.jpg" alt="venice">',
+        correct: "Wood",
+        awnsers: ["Metal", "Wood", "Stone","Obsidian"]
+    },
+    {
+        question: "What was no illegal during the Prohibition Era:",
+        image: '<img  class= "quiz-image" src="assets/images/barrel.jpg" alt="barre">',
+        correct: "Drinking alcohol",
+        awnsers: ["Drinking alcohol", "Producing alcohol", "Selling alcohol ","Murder"]
+    },{
+        question: "The last title Julius Caesar held before his assassination was:",
+        image: '<img  class= "quiz-image" src="assets/images/senat_floor.png" alt="senat_floor">',
+        correct: "Dictator for life",
+        awnsers: ["Dictator for life","Emperor of Rome","Despot of Rome","First Consul"]
+    },
+    {
+        question: "Columbus, during his voyage to reach India, discovered the new world by landing on:",
+        image: '<img  class= "quiz-image" src="assets/images/columbus.png" alt="columbus">',
+        correct: "Bahamas",
+        awnsers: ["Cuba","Bahamas","Shores of Columbia","Coast of Mexico"]
+    },
+    {
+        question: "In 18th The longest and largest overland trade route in history was renewed for the major trade of: infantry plate armour became obsolete because:",
+        image:'<img  class= "quiz-image" src="assets/images/caravan.png" alt="caravan">',
+        correct: "Silk",
+        awnsers: ["Silk", "Pepper", "Diamonds", "Tea"]
+    },
+    {
+        question: "Ancient Egyptians after long day of work loved to:",
+        image: '<img  class= "quiz-image" src="assets/images/egyptian.jpg" alt="egyptian">',
+        correct: "Play board games",
+        awnsers: ["Wrestle", "Go to theatre", "Play catch", "Play board games"]
+    },
+    {
+        question: "Bastion fort revolutionized defensive warfare by:",
+        image: '<img  class= "quiz-image" src="assets/images/cannon.jpg" alt="cannon">',
+        correct: "Maximized defensiveness against cannonball impacts,offered better protection and better views of the battlefield",
+        awnsers: ["Maximized firepower of cannons and infantry", 
+            "Maximized defensiveness against cannonball impacts,offered better protection and better views of the battlefield",
+             "Strong cannon firepower and effective supply lines", "Strong defense and low cost to build"]
+    },
+    {
+        question: "The earliest records of brewing coffee span from 15th century in::",
+        image: '<img  class= "quiz-image" src="assets/images/coffee.jpg" alt="coffee">',
+        correct: "Yemen",
+        awnsers: ["Cuba", "Florida", "Yemen", "Spain"]
+    }
+    ]
 
 /* Variables */
 let question= document.getElementById('question')
@@ -8,110 +72,57 @@ const submitButton = document.getElementById('submit');
 let currentQuestion = {}
 let i= 0; /* number of awensered question*/
 let score = 0; /* number of current correct awensered questions */
+let next= document.querySelector('.awnser');
+let points= document.getElementById('score');
+let quizImage= document.getElementById("quizImage")
+let a1= document.getElementById('a1');
+let a2= document.getElementById('a2');
+let a3= document.getElementById('a3');
+let a4= document.getElementById('a4');
+let correctAwnser = document.getElementById('orrectAwnser')
 
+/*Event listener for selecting awensers*/
+document.addEventListener('click', e =>{
+    if (e.target.matches('.awnser')){
+        calcScore(e)
+        nextQuestion()
 
-
-/* Function that creates structure for quiz*/
-function createHTML (){
-    let quizSpace = document.getElementById("quizArea")
-    quizSpace.innerHTML = `
-    <p id="question"></p>
-    <button class='awnserChoice' id="a1" onclick='submintAwnser()'></button>
-    <button class='awnserChoice' id="a2" onclick='submintAwnser()'></button>
-    <button class='awnserChoice' id="a3" onclick='submintAwnser()'></button>
-    <button class='awnserChoice' id="a4" onclick='submintAwnser()'></button>
-    <button  id="next"></button>
-`;
-}
-
-awnser.addEventListener ("click", function(){
-    buttonSelect();
-  })
-function buttonSelect() {
-    for(var i = 0; i < optionText.length; i++){
-      var option = document.createElement("button");
-      option.innerHTML = optionText[i];
-      document.body.appendChild(option);
     }
-  }
+})
+
   /*Function that hides intro page and shows Quzi HTML structure */
 function hideIntro (){
     console.log('Quiz started')
     let intro = document.getElementById("intro")
     intro.classList.add('hidden') 
-    createHTML(questions)
-    
+    //createHTML(questions)
+    let quizArea= document.getElementById("quizArea")
+    quizArea.classList.remove('hidden')
 }
 
 
-function submintAwnser(){
-    if (awnser == correctAwnser){
+  //function to display questions - ispired by https://github.com/Ahmad528/quizApp
+function displayQuestion(){
+    question.innerHTML= 'Question:'+(i+1)+': '+questions[i].question;
+    quizImage.innerHTML= questions[i].image;
+    a1.innerHTML= questions[i].awnsers[0];
+    a2.innerHTML= questions[i].awnsers[1];
+    a3.innerHTML= questions[i].awnsers[2];
+    a4.innerHTML= questions[i].awnsers[3];
+    //correctAwnser.innerHTML= questions[i].correct;
+}
+
+//function to calculate scores - ispired by https://github.com/Ahmad528/quizApp
+function calcScore(e){
+    if(e.innerHTML===questions[i].correct)
+    {
         console.log('Awnser is correct!');
         alert('Awnser is correct!');
-        let score = score +1;
-    }
-    else {
-            console.log('Awnser is incorrect!');
-            alert('Awnser is incorrect!');  
-        }
-        function  getNewQuestion(){
-            if (awnQue<9 ) {
-                /*Get new question */
-        
-                awnQue = awnQue + 1
-        
-            }
-            else {
-                /* show end screen */
-                let quizSpace = document.getElementById("quizArea")
-                quizSpace.innerHTML = `
-                <h2>Congratolations!</h2>
-                <img class="quiz-image" src="assets/images/napoleon.jpg" alt="napoleon">
-                <p id="question">You scored / 10!</p>
-                <button class="btn" onclick="hideIntro()"></button> `
-            }
-        }
-    }
-}
-
-
-
-/*function displayQuestion(question) {
-    questionElement.innerText = question.question
-    question.answers.forEach(answer => {
-      const button = document.createElement('button')
-      button.innerText = answer.text
-      button.classList.add('awnserChoice')
-      if (answer.correct) {
-        button.dataset.correct = answer.correct
-      }
-      button.addEventListener('click', selectAnswer)
-      answerButtonsElement.appendChild(button)
-    })
-  } */
-
-  //function to display questions
-function displayQuestion(){
-    for(let a=0;a<9;a++){
-        span[a].style.background='none';
-    }
-    //question.innerHTML= 'Q.'+(i+1)+' '+questionBank[i].question;
-    a1.innerHTML= questions[i].question[0];
-    a2.innerHTML= questions[i].question[1];
-    a3.innerHTML= questions[i].question[2];
-    a4.innerHTML= questions[i].question[3];
-    //stat.innerHTML= "Question"+' '+(i+1)+' '+'of'+' '+questionBank.length;
-}
-
-//function to calculate scores
-function calcScore(e){
-    if(e.innerHTML===questions[i].correctAwnser && score<questions.length)
-    {
         score= score+1;
-        document.getElementById(e.id).style.background= 'limegreen';
     }
     else{
-        document.getElementById(e.id).style.background= 'tomato';
+        console.log('Awnser is wrong!');
+        alert('Awnser is wrong!');;
     }
     //setTimeout(nextQuestion,300);
 }
@@ -121,72 +132,20 @@ function nextQuestion(){
     if(i<9)
     {
         i=i+1;
-        displayQuestion();
+       displayQuestion();
     }
     else{
-        points.innerHTML= score+ '/'+ questionBank.length;
-        quizContainer.style.display= 'none';
-        scoreboard.style.display= 'block'
+        console.log('Quiz has ended')
+        //hide question area
+        quizArea.classList.add('hidden')
+        //reveale score area
+        let end = document.getElementById("scoreArea")
+        end.classList.remove('hidden');
+
     }
 }
 
-// *function to check Answers */
-function checkAnswer(){
-    let correctAwnser= document.getElementById('answerBank');
-    let answers= document.getElementById('answers');
-    answerBank.style.display= 'block';
-    scoreboard.style.display= 'none';
-    for(let a=0;a<questionBank.length;a++)
-    {
-        let list= document.createElement('li');
-        list.innerHTML= questionBank[a].answer;
-        answers.appendChild(list);
-    }
-}
-
+//click events to next button
+next.addEventListener('click',nextQuestion);
 
 displayQuestion();
-
-  /** 
-function pullQuestions (qst){
-    qst.forEach(question => {
-        const questionHTML = document.createElement("div");
-        const awnsers = question.availableAwnsers.forEach (q => {
-            return `<button>{q}</button>`
-        });
-    })
-    questionHTML.innerHTML = `
-    <img src = "${question.image}">
-    <button>awensers</button>
-    `
-    questionHTML.insertAdjecentElement('beforeend', awnsers)
-    questionHTML.insertAdjecentElement('beforeend', awnsers)
-    console.log(image)
-}
-
-function initatieQuiz() {
-
-    suffledQuestions = questions.sort(() => Math.random() - .5)
-    currentQuestionIndex = 0
-    questionContainerElement.classList.remove('hide')
-    setNextQuestion()
-
-    function setNextQuestion() {
-        resetState()
-        showQuestion(shuffledQuestions[currentQuestionIndex])
-      };
-      function showQuestion(question) {
-          questionElement.innerText = question.question
-          question.answers.forEach(answer => {
-              const button = document.createElement('button')
-              button.innerText = answer.text
-              button.classList.add('btn')
-              if (answer.correct) {
-                  button.dataset.correct = answer.correct
-                }
-        button.addEventListener('click', selectAnswer)
-        answerButtonsElement.appendChild(button)
-    })
-}
-}
-**/
