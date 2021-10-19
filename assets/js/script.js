@@ -115,7 +115,8 @@ function displayQuestion(){
 
 //function to calculate scores - ispired by https://github.com/Ahmad528/quizApp
 function calcScore(e){
-    if(e.innerHTML===questions[i].correct)
+    console.log(e)
+    if(e.srcElement.innerText===questions[i].correct) //Tnx my mentor for helping me locate the lcoation of the desired atribure in the element
     {
         console.log('Awnser is correct!');
         alert('Awnser is correct!');
