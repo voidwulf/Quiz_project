@@ -147,9 +147,3 @@ function nextQuestion(){
     }
 }
 
-
-
-//click events to next button
-//next.addEventListener('click',nextQuestion);
-
-//displayQuestion();
