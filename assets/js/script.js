@@ -98,6 +98,7 @@ function hideIntro (){
     //createHTML(questions)
     let quizArea= document.getElementById("quizArea")
     quizArea.classList.remove('hidden')
+    displayQuestion()
 }
 
 
@@ -141,11 +142,14 @@ function nextQuestion(){
         //reveale score area
         let end = document.getElementById("scoreArea")
         end.classList.remove('hidden');
+        points.innerHTML= score +'/10'; /*display score after the last question */
 
     }
 }
 
-//click events to next button
-next.addEventListener('click',nextQuestion);
 
-displayQuestion();
+
+//click events to next button
+//next.addEventListener('click',nextQuestion);
+
+//displayQuestion();
