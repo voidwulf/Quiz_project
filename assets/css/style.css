@@ -16,7 +16,11 @@ body {
     padding-right: 5px;
 }
 
+#intro-text{
+width: 800px;
+padding: 2px;
 
+}
 .hidden{
   display: none;
 }
