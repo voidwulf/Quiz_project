@@ -1,4 +1,4 @@
-# History fun fact quiz
+3# History fun fact quiz
 
 History fun fact quiz is a site that provides a short and fun quiz for anyone who likes quizes and historical topics with fun facts. 
 

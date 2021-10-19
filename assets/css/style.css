@@ -7,6 +7,15 @@ body {
     text-align: center;
 }
 
+p {
+  font-size: 1.2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  margin: auto;
+}
 /*  Heading */
 
 .logo {
@@ -15,31 +24,42 @@ body {
     font-size: 2.5rem;
     padding-right: 5px;
 }
-
+/*Intro page style*/
 #intro-text{
-width: 800px;
-padding: 2px;
-
+  margin: auto;
+  width: 90%; 
+  max-width: 1500px; 
+  border: 5px;
+  padding: 10px;
 }
+
+#initiateQuiz{
+  margin: auto;
+  padding: 4px;
+  border: 2px;
+}
+
+/*hidden HTML during different stages of quiz*/
 .hidden{
   display: none;
 }
 
-p {
-  font-size: 1.2rem;
-}
+/*style for images displayed before, during and after the quiz*/
 .quiz-image{
-  height: 600px;
+  margin: auto;
   width: auto;
+  height: 500px;
+  padding: 0px; 
 }
 .choice {
   padding: 2px;
 }
 
-.awnser{
+.answer{
   font-size: 1.2rem;
   background-color: #BAA48A;
-  width: 800px;
+  width: 90%;
+  max-width: 800px;
 }
 
 .btn {
@@ -47,4 +67,116 @@ p {
   font-size: 1.2rem;
   width: 250px;
   font-weight: bold;
+}
+
+/*Score board area - after the quiz has ended*/
+#congratulatons{
+  font-size: 1.8rem;
+  padding: 3px;
+  margin: none;
+}
+#score-anouncment{
+font-size: 1.2rem;
+}
+#score{
+  font-size: 1.2rem;
+}
+/* For large to medium screen size from 1200px wide and down */
+@media screen and (max-width: 1000px) {
+  .quiz-image{
+    height: 300px;
+  }
+}
+#congratulatons{
+  font-size: 1.5rem;
+  padding: 3px;
+  margin: none;
+}
+#score-anouncment{
+font-size: 1.1rem;
+}
+#score{
+  font-size: 1.1rem;
+}
+
+/* For large to medium screen size from 900px wide and down */
+@media screen and (max-width: 900px) {
+  h2 {
+    font-size: 1.1rem;
+    border: none;
+  }
+  .logo {
+      font-size: 2rem;
+      padding-right: 3px;
+  }
+  .quiz-image{
+    height: 250px;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .btn {
+    font-size: 1.1rem;
+  }
+  .answer{
+    font-size: 1em;
+   /* max-width: 700px;*/ 
+  }
+}
+/* For large to medium screen size from 522px wide and down */
+@media screen and (max-width: 522px) {
+  .quiz-image{
+    height: 200px;
+  }
+  .logo {
+    font-size: 1.8rem;
+    padding-right: 3px;
+}
+#congratulatons{
+  font-size: 1.5rem;
+  padding: 3px;
+  margin: none;
+}
+#score-anouncment{
+font-size: 1.1rem;
+}
+#score{
+  font-size: 1.1rem;
+}
+}
+/* For large to medium screen size from 314px wide and down */
+@media screen and (max-width: 314px) {
+  h2 {
+    font-size: 0.8rem;
+    border: none;
+    padding: 2px;
+    margin: 3px;
+  }
+  #congratulatons{
+    padding: 2px;
+    margin: none;
+  }
+  #score-anouncment{
+font-size: 1rem;
+  }
+  #score{
+    font-size: 1rem;
+  }
+  .logo {
+      font-size: 1rem;
+      padding-right: 2px;
+  }
+  .quiz-image{
+    height: 100px;
+  }
+  p {
+    font-size: .7rem;
+  }
+  .btn {
+    font-size: .8rem;
+    width: 150px;
+  }
+  .answer{
+    font-size: .7em;
+  }
 }

@@ -31,7 +31,7 @@
             <div>
                 <img class= "quiz-image"src="assets/images/history.png" alt="historian">
             </div>
-            <div>
+            <div id="initiateQuiz">
                 <button class="btn" onclick="hideIntro()">Start Quiz</button>  
             </div>
         </div>
@@ -42,18 +42,18 @@
             
            <p id="question"></p>
              <!-- offered awensers -->
-            <div class="awnsers">
+            <div class="answers">
                 <div class="choice">
-                    <button class='awnser' id="a1">x</button>  
+                    <button class='answer' id="answer1" >x</button>  
                 </div>
                 <div class="choice">
-                    <button class='awnser' id="a2">x</button>  
+                    <button class='answer' id="answer2">x</button>  
                 </div>
                 <div class="choice">
-                    <button class='awnser' id="a3">x</button>    
+                    <button class='answer' id="answer3">x</button>    
                 </div >
                 <div class="choice">
-                    <button class='awnser' id="a4">x </button>   
+                    <button class='answer' id="answer4">x </button>   
                 </div>
             </div>
         </div>   
@@ -64,20 +64,10 @@
             <div id="scoreArea" class="hidden">
                 <h2 id="congratulatons">Congradolations!</h2>
                 <img class= "quiz-image"src="assets/images/napoleon.jpg" alt="napoleon">
-                <h3 id="score-anouncment">Your score is!</h3>
+                <h3 id="score-anouncment">Your score is:</h3>
                 <h3 id="score"></h3>
             </div>
        </section>
-
-       <section>
-           <!-- cheat sheet-->
-           <div class="hidden">
-            <p id="correctAwnser"></p>
-           </div>
-       </section>
-    
-
-
     <script src="assets/js/script.js"></script>
 </body>
 </html>
