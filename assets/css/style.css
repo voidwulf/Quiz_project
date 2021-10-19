@@ -10,6 +10,7 @@ body {
 /*  Heading */
 
 .logo {
+  font-family: "Latto", sans-serif;
     text-align: center;
     font-size: 2.5rem;
     padding-right: 5px;
@@ -18,4 +19,28 @@ body {
 
 .hidden{
   display: none;
+}
+
+p {
+  font-size: 1.2rem;
+}
+.quiz-image{
+  height: 600px;
+  width: auto;
+}
+.choice {
+  padding: 2px;
+}
+
+.awnser{
+  font-size: 1.2rem;
+  background-color: #BAA48A;
+  width: 800px;
+}
+
+.btn {
+  background-color: #BAA48A;
+  font-size: 1.2rem;
+  width: 250px;
+  font-weight: bold;
 }
