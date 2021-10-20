@@ -73,13 +73,16 @@ h3 {
 #congratulatons{
   font-size: 1.8rem;
   padding: 3px;
-  margin: none;
+  margin: 0;
 }
 #score-anouncment{
 font-size: 1.2rem;
+
 }
 #score{
   font-size: 1.2rem;
+  font-weight: bold;
+  margin:auto;
 }
 /* For large to medium screen size from 1200px wide and down */
 @media screen and (max-width: 1000px) {
@@ -90,7 +93,6 @@ font-size: 1.2rem;
 #congratulatons{
   font-size: 1.5rem;
   padding: 3px;
-  margin: none;
 }
 #score-anouncment{
 font-size: 1.1rem;
@@ -135,7 +137,6 @@ font-size: 1.1rem;
 #congratulatons{
   font-size: 1.5rem;
   padding: 3px;
-  margin: none;
 }
 #score-anouncment{
 font-size: 1.1rem;
@@ -154,7 +155,6 @@ font-size: 1.1rem;
   }
   #congratulatons{
     padding: 2px;
-    margin: none;
   }
   #score-anouncment{
 font-size: 1rem;
