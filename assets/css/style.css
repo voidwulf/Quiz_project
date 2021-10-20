@@ -85,7 +85,7 @@ font-size: 1.2rem;
   margin:auto;
 }
 /* For large to medium screen size from 1200px wide and down */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1280px) {
   .quiz-image{
     height: 300px;
   }
