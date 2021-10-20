@@ -71,44 +71,39 @@ const questions = [
         correct: "Yemen",
         answers: ["Cuba", "Florida", "Yemen", "Spain"]
     }
-    ]
+    ];
 
 /* Variables */
-let question= document.getElementById('question')
-const submitButton = document.getElementById('submit');
-//let suffledQuestions, currentQuestionIndex
-let currentQuestion = {}
+let question= document.getElementById('question');
 let totalQuestions= 0; /* number of awensered question*/
 let score = 0; /* number of current correct awensered questions */
-let next= document.querySelector('.answer');
 let points= document.getElementById('score');
-let quizImage= document.getElementById("quizImage")
+let quizImage= document.getElementById("quizImage");
 let answer1= document.getElementById('answer1');
 let answer2= document.getElementById('answer2');
 let answer3= document.getElementById('answer3');
 let answer4= document.getElementById('answer4');
-let correctAwnser = document.getElementById('correctAnswer')
+/*constants */
+const quizArea= document.getElementById("quizArea");
+const intro = document.getElementById("intro");
 
 /*Event listener for selecting awensers*/
 document.addEventListener('click', e =>{
     if (e.target.matches('.answer')){
-        calcScore(e)
-        nextQuestion()
+        calcScore(e);
+        nextQuestion();
 
     }
-})
+});
 
   /*Function that hides intro page and shows Quzi HTML structure - ispired by  https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp */
 function hideIntro (){
-    console.log('Quiz started')
-    let intro = document.getElementById("intro")
-    intro.classList.add('hidden') 
+    
+    intro.classList.add('hidden') ;
     //createHTML(questions)
-    let quizArea= document.getElementById("quizArea")
-    quizArea.classList.remove('hidden')
-    displayQuestion()
+    quizArea.classList.remove('hidden');
+    displayQuestion();
 }
-
 
   //function to display questions - ispired by https://github.com/Ahmad528/quizApp
 function displayQuestion(){
@@ -118,19 +113,17 @@ function displayQuestion(){
     answer2.innerHTML= questions[totalQuestions].answers[1];
     answer3.innerHTML= questions[totalQuestions].answers[2];
     answer4.innerHTML= questions[totalQuestions].answers[3];
-
 }
 
 //function to calculate scores - ispired by https://github.com/Ahmad528/quizApp
 function calcScore(e){
-    console.log(e)
     if(e.srcElement.innerText===questions[totalQuestions].correct) //Tnx my mentor for helping me locate the lcoation of the desired atribure in the element
     {
         alert('Answer is correct!');
         score= score+1;
     }
     else{
-        alert('Answer is wrong!');;
+        alert('Answer is wrong!');
     }
     //setTimeout(nextQuestion,300);
 }
@@ -144,11 +137,10 @@ function nextQuestion(){
     }
     else{
         //hide question area - ispired by  https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp*/
-        quizArea.classList.add('hidden')
+        quizArea.classList.add('hidden');
         //reveale score area
-        let end = document.getElementById("scoreArea")
+        let end = document.getElementById("scoreArea");
         end.classList.remove('hidden');
         points.innerHTML= score +'/10'; /*display score after the last question */
-
     }
 }
