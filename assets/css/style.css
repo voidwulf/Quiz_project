@@ -101,6 +101,9 @@ font-size: 1.1rem;
   font-size: 1.1rem;
 }
 
+#back-to-home {
+  padding: 2px;
+}
 /* For large to medium screen size from 900px wide and down */
 @media screen and (max-width: 900px) {
   h2 {
