@@ -23,14 +23,14 @@
     </header>
     <section>
         <!--inspired by: Love maths project https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode and https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp -->
-        <div id="intro">
+        <div id="intro" role="main" aria-label="Primary">
             <h2>Welcome to History Challenge Quiz!</h2>
             <div id="intro-text">
                 <p>This quiz will challenge your knowledge of fun facts in history.</p>
                 <p>To start the quiz, click on the start button. The quiz will ask you a question and offer you four answers. Only one answer is correct. Click on the answer to submit it. After submission, you will be informed if the answer is correct or false and offered the next question. After ten questions, you will be presented with your total score.</p>
             </div>
             
-            <div>
+            <div role="img" aria-label="Description of the overall image">
                 <img class= "quiz-image" src="assets/images/history.png" alt="historian">
             </div>
             <div id="initiateQuiz">
@@ -38,13 +38,13 @@
             </div>
         </div>
         <div id="quizArea" class="hidden">
-            <div id="quizImage">
+            <div id="quizImage" role="img" aria-label="Description of the overall image">
 
             </div>
             
            <p id="question"></p>
              <!-- offered awensers -->
-            <div class="answers">
+            <div id="answers" class="answers">
                 <div class="choice">
                     <button class='answer' id="answer1" >x</button>  
                 </div>
