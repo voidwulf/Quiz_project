@@ -1,53 +1,62 @@
 /*questions and images */
 const questions = [
     {
+        /*information acquired thanks to: https://en.wikipedia.org/wiki/Plate_armour and https://www.quora.com/When-did-metal-armor-become-obsolete-in-warfare */
         question: "In the 18th century, infantry plate armor became obsolete because:",
         image: '<img  class= "quiz-image" src="assets/images/armour.jpg" alt="armor">',
         correct: "High cost and low effectiveness against firearms",
         answers: ["High cost and low effectiveness against firearms", "Emergence of kevlar", "Slow logistical army speed", "Increased naval combat"]
     },
     {
+        /*information acquired thanks to: https://www.folger.edu/cool-printing-facts */
         question: "In about 1439, Johannes Gutenberg adapted what mechanism to create the first printing press:",
         image: '<img  class= "quiz-image" src="assets/images/printing_press.png" alt="printing_press">',
         correct: "Wine press",
         answers: ["Windmill", "Stone crusher","Wine press","Lift mechanism"]
     },
     {
+        /*information acquired thanks to: https://www.thelocal.it/20210325/16-surprising-facts-about-venice-to-mark-16-centuries-of-the-lagoon-city/ */
         question: "Venice, the floating city, is built on foundations made out of:",
         image: '<img  class= "quiz-image" src="assets/images/venice.jpg" alt="venice">',
         correct: "Wood",
         answers: ["Metal", "Wood", "Stone","Obsidian"]
     },
     {
+        /*information acquired thanks to: https://www.history.com/news/10-things-you-should-know-about-prohibition */
         question: "What was no illegal during the Prohibition Era:",
         image: '<img  class= "quiz-image" src="assets/images/barrel.jpg" alt="barre">',
         correct: "Drinking alcohol",
         answers: ["Murder", "Drinking alcohol", "Producing alcohol", "Selling alcohol "]
     },{
+        /*information acquired thanks to: https://en.wikipedia.org/wiki/Julius_Caesar */
         question: "The last title Julius Caesar held before his assassination was:",
         image: '<img  class= "quiz-image" src="assets/images/senat_floor.png" alt="senat_floor">',
         correct: "Dictator for life",
         answers: ["Dictator for life","Emperor of Rome","Despot of Rome","First Consul"]
     },
     {
+        /*information acquired thanks to: https://www.nationalgeographic.org/thisday/oct12/columbus-makes-landfall-caribbean/#:~:text=Background%20Info%20Vocabulary-,On%20October%2012%2C%201492%2C%20Italian%20explorer%20Christopher%20Columbus%20made%20landfall,Columbus%20renamed%20it%20San%20Salvador */
         question: "Columbus, during his voyage to India, discovered the new world by landing on:",
         image: '<img  class= "quiz-image" src="assets/images/columbus.png" alt="columbus">',
         correct: "Bahamas",
         answers: ["Cuba","Bahamas","Shores of Columbia","Coast of Mexico"]
     },
     {
+        /*information acquired thanks to: https://www.ducksters.com/history/china/silk_road.php */
         question: "In the 18th, the longest and largest overland trade route in history was renewed for and named after:",
         image:'<img  class= "quiz-image" src="assets/images/caravan.png" alt="caravan">',
         correct: "Silk",
         answers: ["Silk", "Pepper", "Diamonds", "Tea"]
     },
     {
+        /*information acquired thanks to: https://www.history.com/news/11-things-you-may-not-know-about-ancient-egypt */
         question: "Ancient Egyptians, after a long day of work, loved to:",
         image: '<img  class= "quiz-image" src="assets/images/egyptian.jpg" alt="egyptian">',
         correct: "Play board games",
         answers: ["Wrestle", "Go to theatre", "Play catch", "Play board games"]
     },
     {
+        /*information acquired thanks to: https://www.architecturaldigest.com/gallery/aerial-views-that-prove-why-star-forts-are-so-beautiful */
         question: "Bastion fort revolutionized defensive warfare by:",
         image: '<img  class= "quiz-image" src="assets/images/cannon.jpg" alt="cannon">',
         correct: "Maximized defensiveness against cannonball impacts, offered better protection and better views of the battlefield",
@@ -56,6 +65,7 @@ const questions = [
              "Strong cannon firepower and effective supply lines", "Strong defense and low cost to build"]
     },
     {
+        /*information acquired thanks to: https://en.wikipedia.org/wiki/Coffee and https://www.ncausa.org/about-coffee/history-of-coffee */
         question: "The earliest records of brewing coffee span from 15th century in::",
         image: '<img  class= "quiz-image" src="assets/images/coffee.jpg" alt="coffee">',
         correct: "Yemen",
@@ -88,7 +98,7 @@ document.addEventListener('click', e =>{
     }
 })
 
-  /*Function that hides intro page and shows Quzi HTML structure */
+  /*Function that hides intro page and shows Quzi HTML structure - ispired by  https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp */
 function hideIntro (){
     console.log('Quiz started')
     let intro = document.getElementById("intro")
@@ -125,7 +135,7 @@ function calcScore(e){
     //setTimeout(nextQuestion,300);
 }
 
-//function to display next question
+//function to display next question - ispired by https://github.com/Ahmad528/quizApp
 function nextQuestion(){
     if(totalQuestions<9)
     {
@@ -133,7 +143,7 @@ function nextQuestion(){
        displayQuestion();
     }
     else{
-        //hide question area
+        //hide question area - ispired by  https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp*/
         quizArea.classList.add('hidden')
         //reveale score area
         let end = document.getElementById("scoreArea")

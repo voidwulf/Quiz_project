@@ -1,7 +1,7 @@
-  /* Global style */
+/* Global style - inpired by Enter GURPS https://github.com/voidwulf/Project_1 */
 
 body {
-    background-color: #EDD1B0; 
+    background-color: #EDD1B0; /*inspired by https://www.researchgate.net/publication/320541475_Good_Background_Colors_for_Readers_A_Study_of_People_with_and_without_Dyslexia */
     font-family: "Roboto", sans-serif;
     color: #1d1f20;
     text-align: center;
