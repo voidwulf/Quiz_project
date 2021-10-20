@@ -1,19 +1,19 @@
 /*questions and images */
 const questions = [
     {
-        question: "In 18th century infantry plate armour became obsolete because:",
-        image: '<img  class= "quiz-image" src="assets/images/armour.jpg" alt="armour">',
-        correct: "High cost and low effectiveness against fire arms",
-        answers: ["High cost and low effectiveness against fire arms", "Emergence of kevlars", "Slow logistical army speed", "Increased naval combat"]
+        question: "In the 18th century, infantry plate armor became obsolete because:",
+        image: '<img  class= "quiz-image" src="assets/images/armour.jpg" alt="armor">',
+        correct: "High cost and low effectiveness against firearms",
+        answers: ["High cost and low effectiveness against firearms", "Emergence of kevlar", "Slow logistical army speed", "Increased naval combat"]
     },
     {
-        question: " In about 1439, Johannes Gutenberg adapted what mechanism to create the first printing press:",
+        question: "In about 1439, Johannes Gutenberg adapted what mechanism to create the first printing press:",
         image: '<img  class= "quiz-image" src="assets/images/printing_press.png" alt="printing_press">',
         correct: "Wine press",
         answers: ["Windmill", "Stone crusher","Wine press","Lift mechanism"]
     },
     {
-        question: "Venice, the floating city is built on foundations made out of:",
+        question: "Venice, the floating city, is built on foundations made out of:",
         image: '<img  class= "quiz-image" src="assets/images/venice.jpg" alt="venice">',
         correct: "Wood",
         answers: ["Metal", "Wood", "Stone","Obsidian"]
@@ -30,19 +30,19 @@ const questions = [
         answers: ["Dictator for life","Emperor of Rome","Despot of Rome","First Consul"]
     },
     {
-        question: "Columbus, during his voyage to reach India, discovered the new world by landing on:",
+        question: "Columbus, during his voyage to India, discovered the new world by landing on:",
         image: '<img  class= "quiz-image" src="assets/images/columbus.png" alt="columbus">',
         correct: "Bahamas",
         answers: ["Cuba","Bahamas","Shores of Columbia","Coast of Mexico"]
     },
     {
-        question: "In 18th The longest and largest overland trade route in history was renewed for the major trade of: infantry plate armour became obsolete because:",
+        question: "In the 18th, the longest and largest overland trade route in history was renewed for and named after:",
         image:'<img  class= "quiz-image" src="assets/images/caravan.png" alt="caravan">',
         correct: "Silk",
         answers: ["Silk", "Pepper", "Diamonds", "Tea"]
     },
     {
-        question: "Ancient Egyptians after long day of work loved to:",
+        question: "Ancient Egyptians, after a long day of work, loved to:",
         image: '<img  class= "quiz-image" src="assets/images/egyptian.jpg" alt="egyptian">',
         correct: "Play board games",
         answers: ["Wrestle", "Go to theatre", "Play catch", "Play board games"]
@@ -50,9 +50,9 @@ const questions = [
     {
         question: "Bastion fort revolutionized defensive warfare by:",
         image: '<img  class= "quiz-image" src="assets/images/cannon.jpg" alt="cannon">',
-        correct: "Maximized defensiveness against cannonball impacts,offered better protection and better views of the battlefield",
+        correct: "Maximized defensiveness against cannonball impacts, offered better protection and better views of the battlefield",
         answers: ["Maximized firepower of cannons and infantry", 
-            "Maximized defensiveness against cannonball impacts,offered better protection and better views of the battlefield",
+            "Maximized defensiveness against cannonball impacts, offered better protection and better views of the battlefield",
              "Strong cannon firepower and effective supply lines", "Strong defense and low cost to build"]
     },
     {
