@@ -50,9 +50,65 @@ For future development, the following items are taken into consideration:
 * adding code to shuffle questions to increase the repeatability of the quiz
 * adding code to shuffle the order of the offered answers 
 * introducing a fun fact text related to the question to make the quiz more rewarding
+* improving Accessibility.
 
 ## Testing
 
+Testing has been performed before and after site deployment.
+
+### Testing JavaScript code
+
+Testing of JavaScript code has been performed using browser view created in Gitpod and console.logs. With this approach, I was able to see if the code worked as intended and root cause the error if not. Bes example of this approach was comparing the selected question from the HTML button element to the correct awnser in the js object. Through the console.log I realized that the value I chose was not appropreate, and I had to target if e.srcElement.innerText and compare it to the correct question. 
+
+![js.trial](docs/supporting_images/trial.JPG)
+
+### CSS code validation
+
+CSS code has been validated using Jigsaw W3C. Errors encountered were related to margin definition. 
+
+![CSS.1st_validation](docs/supporting_images/css_val_1.JPG)
+
+Margins have been redefined and the code reevaluated. And the code validation has passed.
+
+![CSS.2nd_validation](docs/supporting_images/css_val_2.JPG)
+
+### HTML code validation
+
+HTML code has been validated using W3C validator. Initial validation showed two errors due to no spacing between attributes in the HTML elements and an empty heading.
+
+![HTML.1st_validation](docs/supporting_images/HTML_val_1.JPG)
+
+After the error is corrected, the code has been re-evaluated, and validation has passed.
+
+![HTML.1st_validation](docs/supporting_images/HTML_val_2.JPG)
+
+### JavaSrcipt code validation
+
+JavaScript code has been validated in jshint. Most of the errors were related to missing semicoms, with a couple of errors being related to unused variables. The unused variables were a result of previous use of the code that was planned to be implemented or rendered obsolete as the code evolved.
+
+![js.1st_validation](docs/supporting_images/js-val-1.JPG)
+
+After the code has been cleaned, hidenIntro is registered as an unused variable. This function has been in onclick attribute in HTML button element to initiate the quiz. Without this creature, the quiz would not be initiated. For that reason, this message has been ignored.
+
+![js.2nd_validation](docs/supporting_images/js-val-2.JPG)
+
+### Lighthouse test
+
+A Lighthouse test has been performed to inspect the page. From the test report, it can be seen that the Accessibility was 89% and in the orange area. 
+
+![lighthouse.1st](docs/supporting_images/lighthouse-1.JPG)
+
+After some research and reading the report, the HTML code has been updated to improve Accessibility. The second lighthouse test shows the Accessibility has been increased to 91%.
+
+![lighthouse.2nd](docs/supporting_images/lighthouse-2.JPG)
+
+Due to the time constraints, no further work was performed to increase the Accessibility. Future development of this code will be focused on improving the Accessibility.
+
+### Overflow
+
+Unicorn revealer add-on was used to inspect the web page overflow – This tool proved useful during the pre-deployment phase. There were minor overflow issues that needed to be fixed. Overflow between the image in the intro area and paragraph were interfering. After the implementation of Unicor revealer and use of dev tool the issue has been fixed.
+
+![overflow](docs/supporting_images/Overflow.JPG)
 
 ## Deployment
 
