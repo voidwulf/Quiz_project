@@ -112,6 +112,20 @@ Unicorn revealer add-on was used to inspect the web page overflow – This tool 
 
 ## Deployment
 
+Deployment has been performe in the following steps:
+
+* Public repository Project 2 has been selected: https://voidwulf.github.io/Quiz_project/
+* GitHup Pages has been used for deployment
+* Main branch has been chosen as a source
+
+![deployment](docs/supporting_images/deployment.JPG)
+
+* Deploy link has been generated for use
+* Site has been deployed using Git Pages. After the link has been generated, the site has been tested on desktop web browser, ASUS tablet and Samsung M30 smart phone
+* Link has been sent to friends to receive feedback on how the code works on other devices
+* Most feedback has been related to typos that been fixed thanks to [Grammarly](https://www.grammarly.com/)
+* [Am I Responsive](http://ami.responsivedesign.is/) has been used to check how the display works across platforms. There were corrections required in CSS to accommodate laptops and tablets. Small adjustments have been made for mobile.
+* Dev tools have been used for debugging and testing website during after deployment
 
 ## Cedits
 
