@@ -129,14 +129,51 @@ Deployment has been performe in the following steps:
 
 ## Cedits
 
+### Text content
+Text content has been inspired by following readings:
+* [Wikipedia on armor](https://en.wikipedia.org/wiki/Plate_armour) and [Quora](https://www.quora.com/When-did-metal-armor-become-obsolete-in-warfare)
+* [Folger](https://www.folger.edu/cool-printing-facts) on information on printing press
+* [The Local](https://www.thelocal.it/20210325/16-surprising-facts-about-venice-to-mark-16-centuries-of-the-lagoon-city/) for information on Venice
+* [History.com](https://www.history.com/news/10-things-you-should-know-about-prohibition) on fun facts on prohibition
+* [Wikipedia on Julius Caser](https://en.wikipedia.org/wiki/Julius_Caesar) for information on Julius Ceasar
+* [National Geographic](https://www.nationalgeographic.org/thisday/oct12/columbus-makes-landfall-caribbean/#:~:text=Background%20Info%20Vocabulary-,On%20October%2012%2C%201492%2C%20Italian%20explorer%20Christopher%20Columbus%20made%20landfall,Columbus%20renamed%20it%20San%20Salvador) for information on Columbus
+* [Ducksters](https://www.ducksters.com/history/china/silk_road.php) for information on Silk Road
+* [History](https://www.history.com/news/11-things-you-may-not-know-about-ancient-egypt) on information on ancient Egypt
+* [Architecturaldigest](https://www.architecturaldigest.com/gallery/aerial-views-that-prove-why-star-forts-are-so-beautiful) for information on bastion fortress
+* [Wikipedia](https://en.wikipedia.org/wiki/Coffee) and [Ncausa](https://www.ncausa.org/about-coffee/history-of-coffee */) for history of coffee
+
+### Styling
+
+Styling has been inspired by:
+* ["Good Background Colors for Readers:A Study of People with and without Dyslexia"](https://www.researchgate.net/publication/320541475_Good_Background_Colors_for_Readers_A_Study_of_People_with_and_without_Dyslexia) study that helped me choose a pleasant background
+* [Enter GURPS project](https://github.com/voidwulf/Project_1) for global styling
+
+### Quiz js code
+* [Simen Daehlin](https://github.com/Eventyret) for tutoring and inspiring me to think about how to retrive the questions from arrays and objects.
+* [Aaron Sinnott](https://github.com/aaronsnig501) for constructive feedback on the project and advice to search the console.log to root cause failure for score error. 
+* [Sulaimon Olaniran's article](https://dev.to/sulaimonolaniran/building-a-simple-quiz-with-html-css-and-javascript-4elp) that helped me understand js logic and inspired me to write code for my quiz
+* [Ahmad528](https://github.com/Ahmad528/quizApp) for inspiring my js code to display question in HTML and compare answers
+
+### Technology 
+Special thanks to the following provider and technology for helping to inspect the content:
+* [Grammarly](https://grammarly.com) application used for inspection of grammer and spelling error
+* [Tiny png](https://tinypng.com/) has been used to compress images
+* Dev tools for inspecting and fixing my code
+* [Am I Responsive](http://ami.responsivedesign.is/) used for testing responsivness of this webpage
+* Unicorn revealer used for inspecting overflow
+
+
 ### Images
 
-Most of the images have been aqured from [Pixabay](https://pixabay.com/). 
+All images have been aqured from [Pixabay](https://pixabay.com/). 
 Big shout out to:
 * [Scarlet_Letter](https://pixabay.com/users/scarlet_letter-1644696/) for image of the [printing press](https://pixabay.com/illustrations/printing-press-printing-press-paper-1093509/).
 * [ArtTower](https://pixabay.com/users/arttower-5337/) for images of [Venice](https://pixabay.com/illustrations/venice-italy-6683160/) and [barrels](https://pixabay.com/photos/barrels-kegs-casks-wine-containers-52934/) 
-* [GDJ](https://pixabay.com/users/gdj-1086657/) for images of [trade caravan](https://pixabay.com/vectors/beach-camels-caravan-people-5437910/) and [Columbus](https://pixabay.com/vectors/christopher-columbus-portrait-6471762/)
+* [GDJ](https://pixabay.com/users/gdj-1086657/) for images of [trade caravan](https://pixabay.com/vectors/beach-camels-caravan-people-5437910/), [Columbus](https://pixabay.com/vectors/christopher-columbus-portrait-6471762/) and [Senat Floor](https://pixabay.com/vectors/julius-caesar-assassination-painting-4877717/)
 * [ArtsyBee](https://pixabay.com/users/artsybee-462611/) for [Egyptian themed](https://pixabay.com/illustrations/egyptian-design-man-woman-priest-1822015/) image
 * [jon57](https://pixabay.com/users/jon57-1587760/) for image of [fort cannon](https://pixabay.com/photos/cannon-gun-rampart-battlement-2034724/)
 * [Ri_Ya](https://pixabay.com/users/ri_ya-12911237/) for nice image of [coffee beans](https://pixabay.com/photos/coffee-beans-seed-caffeine-cafe-6632524/)
 * [WikiImages](https://pixabay.com/users/wikiimages-1897/) for an image of [Napoleon](https://pixabay.com/photos/napoleon-bonaparte-emperor-france-67784/) and [French Revolution](https://pixabay.com/users/wikiimages-1897/)
+* [ArtCoreStudios](https://pixabay.com/users/artcorestudios-704771/) for image of [armor](https://pixabay.com/photos/gladiator-warrior-gear-weapons-1931077/)
+* [OpenClipart-Vectors](https://pixabay.com/users/openclipart-vectors-30363/) for image of [Historian](https://pixabay.com/vectors/bust-famous-greek-herodotus-2026845/
+https://pixabay.com/users/openclipart-vectors-30363/)
